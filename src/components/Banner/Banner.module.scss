@@ -1,0 +1,29 @@
+
+@import "../../variables";
+
+.banner{
+    display: flex;
+    max-width: $page-width-max;
+    margin: 75px auto 150px;
+
+    .content {
+        width: 50%;
+
+        h1 {
+            margin: 220px 0 25px 0;
+            font-weight: 700;
+            font-size: 3.875rem; // var heading1
+            color: $gray;
+            letter-spacing: 1.2px;
+        }
+
+        h2 {
+            width: 450px;
+            font-weight: 300;
+            font-size: 1.3125rem; // var heading2
+            line-height: 32px;
+            color: $gray;
+        }
+
+    }
+}

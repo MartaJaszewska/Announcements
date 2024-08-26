@@ -1,0 +1,81 @@
+@import "../../variables";
+
+.header {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+
+    .logo{
+        width: 200px;
+    }
+    
+    .mainNavigation {
+        display: flex;
+        flex-grow: 1;
+        justify-content: end;
+        align-items: center;
+
+        div {
+            padding: 0 10px;
+        }
+
+        .toggleMenu {
+            position: relative;
+            display: inline-block;
+          
+            .menuButton {
+              color: $black;
+              border: none;
+              padding: 0;
+              font-size: 25px;
+              border-radius: 4px;
+              cursor: pointer;
+              background: none repeat scroll 0 0 transparent;
+            }
+          
+            .navMenu {
+              display: none;
+              position: absolute;
+              top: 100%;
+              right: 0;
+              background-color: $white;
+              box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+              border-radius: 4px;
+              overflow: hidden;
+              z-index: 1;
+          
+              ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+          
+                li {
+                  border-bottom: 1px solid $gray-light;
+          
+                  &:last-child {
+                    border-bottom: none;
+                  }
+          
+                  a {
+                    display: block;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    color: $blue;
+                    font-size: 16px;
+          
+                    &:hover {
+                      background-color: $gray-light;
+                    }
+                  }
+                }
+              }
+            }
+          
+            &.active .navMenu {
+              display: block;
+            }
+          }
+          
+    }
+    
+}

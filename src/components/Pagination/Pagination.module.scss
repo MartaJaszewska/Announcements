@@ -1,0 +1,39 @@
+@import "../../variables";
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .button {
+    background-color: $white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: $blue;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    width: 100px;
+  
+    &:disabled {
+      background-color: $gray;
+      cursor: not-allowed;
+      color: $white;
+    }
+  
+    &:hover:not(:disabled) {
+      background-color: $gray-light;
+    }
+  }
+  
+  .pageNumber {
+    font-size: 16px;
+    color: $gray;
+  }
+  

@@ -1,0 +1,36 @@
+@import "../../variables";
+
+.searchResults {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+    color: $blue;
+
+    th {
+        background-color: $white-gray;
+        padding: 15px 25px;      
+        font-weight: 600;
+        color: $blue;
+
+        &:first-of-type {
+            border-right: 1px solid $white-gray;
+            width: 215px;
+        }
+    }
+
+    td {
+        padding: 15px 25px;
+        border-bottom: 1px solid $gray-light;
+
+        &:first-of-type {
+            border-right:1px solid $white-gray;
+            width: 250px;
+            color: $gray;
+        }
+
+        &:nth-of-type(2) {
+            color: $blue;
+            font-weight: 500;
+        }
+    }
+}

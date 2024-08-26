@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.toggle {
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 18px;
+    color: $gray;
+    margin-bottom: 25px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid $gray-medium;
+  }
+
+  button {
+    background: none;
+    color: $gray-medium;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-weight: normal;
+  }
+  
+  .contentHidden {
+    display: none;
+  }
+  
+  .contentVisible {
+    display: block;
+  }
+
+}

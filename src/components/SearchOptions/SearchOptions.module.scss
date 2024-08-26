@@ -1,0 +1,46 @@
+@import "../../variables";
+
+.searchOptions {
+  margin: 0 0 40px 0;
+  width: 100%;
+    display: flex;
+    align-items: center;
+
+  .resultsCount {
+    color: $gray;
+    display: inline-block;
+    width: 100px;
+    min-width: max-content;
+    font-size: 14px;
+  }
+
+  .tags {
+    display: flex;
+    width: 100%;
+
+    li {
+      display: inline;
+      margin: 0 8px;
+      padding: 8px 35px 8px 20px;
+      background-color: $blue;
+      color: $white;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+
+      img {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 12px;
+      }
+
+      &.resetTags {
+        background-color: $gray-medium;
+        margin-left: auto;
+      }
+    }
+  }
+}
